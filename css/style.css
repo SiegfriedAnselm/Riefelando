@@ -1,0 +1,308 @@
+html {
+    scroll-behavior: smooth;
+}
+html a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto-Regular';
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+/* Header */
+header {
+    height: 100px;
+    background-color: rgb(255, 94, 0);
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 0 10px black;
+    z-index: 999;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    font-family: 'Roboto-Black';
+}
+
+
+h6 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.speech {
+    margin-right: 160px;
+    width: 32px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.riefelando {
+    display: flex;
+    align-items: flex-end;
+}
+
+.riefelandoLogo {
+    height: 48px;
+    width: auto;
+    margin-left: 160px;
+    margin-right: 8px;
+}
+.empty {
+    height: 100px;
+}
+
+.pizzeria {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.rizzepiaLogo {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 30vw;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.rizzepiaLogo img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* Shopping Card */
+aside {
+    position: sticky;
+    overflow: scroll;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: 48px 24px;
+    width: calc(30vw - 51px);
+    border-left: solid 3px gray;
+    height: calc(100vh - 205px);
+    box-shadow: 0 20px 8px;
+}
+
+aside img {
+    height: 200px;    
+}
+
+.shoppingcard-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.result {
+    font-size: 16px;
+    color: black;
+    font-family: 'Roboto-Bold';
+}
+
+h3 {
+    font-size: 32px;
+    font-family: 'Roboto-Bold';
+    color: black;
+    margin: 0;
+}
+
+h5 {
+    color: black;
+    margin: 0;
+}
+
+.order {
+    padding: 16px 80px;
+    background-color: rgb(255, 94, 0);
+    border-radius: 24px;
+    border: none;
+    font-family: 'Roboto-Bold';
+    color: white;
+    margin: 24px;
+}
+
+.order:hover {
+    background-color: rgb(255, 163, 110);
+}
+
+.responsiveShoppingcart {
+    display: none;
+}
+
+.content {
+    gap: 0 4px;
+}
+
+.basketCard {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 8px;
+    border-radius: 8px;
+    width: 25vw;
+    margin-top: 8px;
+
+}
+
+.paySum {
+    margin-top: 24px;
+}
+
+.checkout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.changeAmount {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.changeAmount button {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align:  start;
+}
+
+.sum, .sumAll {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sumAll {
+    font-family: 'Roboto-Bold';
+}
+
+/* Main */
+
+main {
+    width: 70vw;
+}
+.rest-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 100px;
+    gap: 8px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 40px;
+    color: black;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    color: gray;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.review img {
+    height: 24px;
+}
+
+.slider {
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+    padding: 8px 80px;
+    margin: 16px 0 24px 0;
+}
+
+.slider p {
+    color: black;
+}
+
+.highrunner {
+    color: rgb(255, 94, 0)!important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.meals img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+h4 {
+    color: black;
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.mealCard {
+    display: flex;
+    height: fit-content;
+    margin: 8px;
+    padding: 16px;
+    border: 1px solid grey;
+    width: calc(100% - 48px);
+    color: black;
+}
+
+.addToBasket, .menu {
+    width: 50%;
+
+}
+
+.ingreed span{
+    color: gray;
+}
+
+.addToBasket {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.addToBasketBtn {
+    width: 36px;
+    height: 36px;
+    font-size: 32px;
+    font-feature-settings: "";
+}

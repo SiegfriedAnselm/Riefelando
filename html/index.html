@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icons/rieferlando-icon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/mediaq.css">
+    <script src="../script/menuData.js"></script>
+    <script src="../script/templates.js"></script>
+    <script src="../script/script.js"></script>
+    <title>Riefelando</title>
+</head>
+<body onload="render()">
+    <header>
+        <div class="riefelando"><img class="riefelandoLogo" src="../icons/rieferlando-icon.png"><h1>Riefelando</h1><h6>.de</h6></div>
+        <address></address>
+        <img class="speech" src="../icons/deutschland.png" alt="Deutschladnflagge">
+    </header>
+
+    <div class="empty"></div>
+<!--Basket full view-->
+    <aside>
+        <div id="shoppingcard" class="shoppingcard-headline">
+            <h3>Warenkorb</h3>
+            <div id="content"><img src="../icons/shoppingcard.png" alt="Warenkorbtasche">
+                <h5>Keinen Hunger?<br>Ihr Warenkorb ist noch leer</h5>
+            </div>
+        </div>
+        <div class="cost" id="cost"></div>
+        <button id="order" onclick="order()" class="order">Bestellen</button>
+    </aside>
+
+    <!--Basket responisve-->
+    <div class="responsiveShoppingcart"><img onclick="openBasket()" src="../icons/warencorb.png"></div>
+    <div id="responsiveBasket" class="d-none">
+        <div class="responsiveBasket">
+            <img class="close" onclick="closeBasket()" src="../icons/close.png">
+            <div id="shoppingcardResponsive" class="shoppingcard-headline">
+                <h3>Warenkorb</h3>
+                <div id="contentResponsive"><img src="../icons/shoppingcard.png" alt="Warenkorbtasche">
+                    <h5>Keinen Hunger?<br>Ihr Warenkorb ist noch leer</h5>
+                </div>
+            </div>
+            <div class="cost" id="costResponsive"></div>
+            <button id="order" onclick="order()" class="order">Bestellen</button>
+        </div>
+    </div>
+
+    <main>
+        <img class="pizzeria" src="../img/pizzaria.jpg">
+
+    <div class="rizzepiaLogo"><img src="../icons/rizzepiaLogo.png"></div>
+
+    <div class="rest-name">
+        <h2>Rizzepia Pizzeria</h2>
+        <div class="review">
+            <img src="../icons/reviews.png">
+            <p>(10,4k Bewertungen)</p>
+        </div>
+    </div>
+
+    <div class="slider">
+        <p class="highrunner">BELIEBT</p>
+        <p>%Angebote%</p>
+        <p>Menu</p>
+        <a href="#pizzaimg">Pizza</a>
+        <a href="#burgerimg">Burger</a>
+        <a href="#salatimg">Salate</a>
+        <p>Pasta</p>
+        <p>Getränke</p>
+    </div>
+
+    <div class="meals">
+        <img id="pizzaimg" src="../img/pizza.jpg" alt="">
+    </div>
+    <div id="pizza" class="pizzen"></div>
+
+    <div id="burgerimg" class="meals">
+        <img src="../img/hamburger.jpg" alt="">
+    </div>
+    <div id="burger" class="burger"></div>
+
+    <div id="salatimg" class="meals">
+        <img src="../img/salat.jpg" alt="">
+    </div>
+    <div id="salat" class="salate"></div>
+</main>
+</body>
+</html>
